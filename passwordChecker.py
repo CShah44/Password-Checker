@@ -29,7 +29,7 @@ def pwned_api_check(password):
 
 def main(args):
     for password in args:
-        count = pwned_api_check(password)
+        count = pwned_api_check(password)  # checks for the given password/s
         if count:
             print(
                 f'{password} was found {count} times, better change your password!')
